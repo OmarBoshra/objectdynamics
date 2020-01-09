@@ -21,20 +21,22 @@ allprojects {
 ## Dependency
 Add this to your module's build.gradle file (make sure the version matches the JitPack badge above):
 
-`dependencies {
-
+```
+dependencies {
 	...
 	        implementation 'com.github.OmarBoshra:objectdynamics:v1.0'
 
-}`
+}
+```
 
 ## Usage
 
 for every object yo  want to scale declare the class and then use method `touchgrappingMechanism`
 
-`    objectscale object=new objectscale();
+```
+objectscale object=new objectscale();
 
      object.touchgrappingMechanism(motionEvent,view,rootlayout,MainActivity.this);
-`
+```
 
 
