@@ -5,6 +5,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+
 public class objectscale {
 
     private int [] lastTouchDownXY = new int [2];
@@ -12,6 +13,12 @@ public class objectscale {
 
     public void touchgrappingMechanism(MotionEvent motionEvent, View
             view, final View rootLayout, Context context){
+
+        int doublepaddingID = context.getResources().getIdentifier("doublepadding", "dimen", context.getPackageName());
+        int buttompaddingID = context.getResources().getIdentifier("bottomtooolbarheight", "dimen", context.getPackageName());
+
+        float doublepadding =(context.getResources().getDimension(doublepaddingID));
+        float buttompadding =(context.getResources().getDimension(buttompaddingID));
 
         int action = motionEvent.getActionMasked();
 
@@ -30,7 +37,7 @@ public class objectscale {
 
 
                 if((lastTouchDownXY[0] - (view.getWidth() / 2))>=0&&lastTouchDownXY[1] - (view.getHeight())>=0) {
-                    if ((lastTouchDownXY[0] - (view.getWidth() / 2)) + view.getWidth() < (rootLayout.getWidth() - (context.getResources().getDimension(R.dimen.doublepadding))) && (lastTouchDownXY[1] - (view.getHeight())) + view.getHeight() < (rootLayout.getHeight() - (context.getResources().getDimension(R.dimen.doublepadding) + context.getResources().getDimension(R.dimen.bottomtooolbarheight)))) {
+                    if ((lastTouchDownXY[0] - (view.getWidth() / 2)) + view.getWidth() < (rootLayout.getWidth() - (doublepadding)) && (lastTouchDownXY[1] - (view.getHeight())) + view.getHeight() < (rootLayout.getHeight() - (doublepadding + buttompadding))) {
 
                         layoutParams.leftMargin = lastTouchDownXY[0] - (view.getWidth() / 2);
                         layoutParams.topMargin = lastTouchDownXY[1] - (view.getHeight());
