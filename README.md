@@ -1,19 +1,22 @@
 [![](https://jitpack.io/v/OmarBoshra/objectdynamics.svg)](https://jitpack.io/#OmarBoshra/objectdynamics)
 
 
+
 # objectdynamics
 simple library for scaling objects inside relative layout
 
 ## Prerequisites
 Add this in your root build.gradle file (not your module build.gradle file):
 
-`  allprojects {
+`  
+allprojects {
     	repositories {
-	
     		...
     		maven { url "https://jitpack.io" }
     	}
-    }`
+    }
+    
+    `
 
     
 ## Dependency
