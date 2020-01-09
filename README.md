@@ -24,7 +24,7 @@ Add this to your module's build.gradle file (make sure the version matches the J
 `dependencies {
 
 	...
-	      implementation 'com.github.OmarBoshra:objectdynamics:v1'
+	        implementation 'com.github.OmarBoshra:objectdynamics:v1.0'
 
 }`
 
