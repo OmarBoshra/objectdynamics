@@ -36,7 +36,7 @@ for every object yo  want to scale declare the class and then use method `touchg
 ```
 objectscale object=new objectscale();
 
-     object.touchgrappingMechanism(motionEvent,view,rootlayout,MainActivity.this);
+object.touchgrappingMechanism(motionEvent,view,rootlayout,MainActivity.this);
 ```
 
 
